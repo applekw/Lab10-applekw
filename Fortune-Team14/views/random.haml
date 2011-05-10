@@ -1,0 +1,15 @@
+!!! 5
+
+%html{:lang => "en"}
+	%head
+		%title Specific Fortune
+	%body
+	
+	
+	- if(@fortune)
+		.fortune
+			= @fortune
+			
+			
+			%form{:action => "", :method => "get"}
+				%input{:type => "submit", :id => "new_fortune", :value => "New Fortune"}
